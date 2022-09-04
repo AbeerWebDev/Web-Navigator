@@ -23,42 +23,45 @@ To implement stacks in a real life example.
 * Node.js
 
 ## Features
-* A test file for the promise.
-* The main class: MyPromise.
-* An UncaughtPromiseError class.
-* An onSuccess method
-* An onFail Method.
-* A then method.
-* A catch method.
-* A finally method.
-* All static methods associated with promises which are: resolve, reject, all, allSettled, race, and any.
+* A back page.
+* A next page.
+* A current page.
+* Helper methods.
+* Prompts for user input.
+* A Stack class.
+* A Node class.
+* A LinkedList class.
 
 ## Installation and Setup Instructions
 
-Clone down this repository. You will need `jest` and `npm` installed globally on your machine.
-
-### Installation:
-
-`npm install jest`
-
-To Run Test Suite:
-
-`npm run test`
+Clone down this repository. In terminal type `node script.js` then follow instructions.
 
 ## Usage
 
-**MyPromise class**
+**New Page**
+* When we open a new page, we push the previous page on the backPages stack. When we revisit an old page and then visit a new page from there, we clear any content in the nextPages stack.
 
-* A replicate code of the promise API.
+**Back Page**
+* When we revisit a back page, we push the current page on the nextPages stack. Like the back button and the next button on a web browser, if the backPages stack is empty, the back operation is disabled and will be enabled only when the stack has content.
+
+**User Input Prompts**
+ * User input is required to: enter a new page to be visited, navigate backward or forward a page, and to quit the program.
+
+**Display of User Information**
+
+* Other than quitting, all operations display information about the current page and the top element of the two stacks.
+
+**Quit Page**
+* An option for the user to quit the prompts.
 
 ## Project Status
 Project is: Completed
 
 ## Room for Improvement
-* Add a JS file that uses our promise to demonstrate how it is used.
+* Add CSS file for a smoother user experience.
 
 ## Acknowledgements
-* Many thanks to webdevsimplified.
+* Many thanks to Codecademy.
 
 ## Contact
 Created by Abeer Ahmed [LinkedIn profile](https://www.linkedin.com/in/abeerfrontend/) - feel free to contact me.
